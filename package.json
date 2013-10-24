@@ -1,0 +1,9 @@
+{
+  "name": "customd3",
+    "version": "0.0.1",
+      "dependencies": {
+          "d3": "3.3.8",
+          "smash":"0",
+          "uglify-js": "2"
+        }
+}
