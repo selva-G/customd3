@@ -19,4 +19,7 @@ LIBRARY_FILES = \
   node_modules/d3/src/end.js
 
 d3.js: $(LIBRARY_FILES)
+	 node_modules/.bin/smash $(LIBRARY_FILES) > d3.js
+
+d3.min.js: $(LIBRARY_FILES)
 	node_modules/.bin/smash $(LIBRARY_FILES) | node_modules/.bin/uglifyjs - -c -m -o $@
